@@ -1,0 +1,35 @@
+.container{
+    max-width:1170px ;
+    margin: auto;
+}
+
+.footer{
+    background-color: rgb(39, 38, 38);
+    padding: 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding:0 15px
+}
+.footer-col h4{
+    font-size: 18px;
+    color:white;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+}
+.footer-col ul li a:hover{
+    padding-left: 5px;
+    color: white;
+}
