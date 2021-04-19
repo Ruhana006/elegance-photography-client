@@ -22,7 +22,7 @@ const ServiceDetail = (props) => {
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                        {price}
+                        Service Charge : $ {price}
                     </Card.Text>
                     <Button onClick={()=> handleBookNow(_id)} variant="warning">Book Now</Button>
                 </Card.Body>
