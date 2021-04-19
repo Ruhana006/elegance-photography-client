@@ -23,11 +23,11 @@ const teamMembers = [
 
 const TeamMembers = () => {
     return (
-        <section>
+        <section id="team">
             <div className="text-center mt-5">
-                <h1 style={{color:'black'}}>Our Team Members</h1>
+                <h1 >Our <span style={{color:'rgb(233, 211, 12)'}}>Team Members</span></h1>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="container-fluid d-md-flex justify-content-md-center align-items-md-center">
                 <div className="row mt-5">
                    {
                        teamMembers.map(member => <TeamMemberDetail member ={member} key={member.name}></TeamMemberDetail>)

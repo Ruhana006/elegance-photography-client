@@ -1,0 +1,18 @@
+.form{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.form-input{
+    width: 40%;
+    padding: 10px;
+
+}
+.submit-btn{
+    width: 30%;
+    font-size: 18px;
+    border: 2px solid black;
+}
+.submit-btn:hover{
+    background-color:  rgb(233, 211, 12);
+}

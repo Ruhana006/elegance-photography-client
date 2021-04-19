@@ -1,0 +1,9 @@
+.image:hover{
+     z-index: .75;
+     transform: scale(1.025);
+     opacity: .5;
+     
+}
+.card:hover{
+    box-shadow: 2px 2px 4px 4px grey;
+}

@@ -4,9 +4,12 @@ import "firebase/auth";
 import "firebase/firestore";
 import firebaseConfig from "./firebaseConfig";
 import { useContext } from 'react';
-import { UserContext } from '../../../App';
+
 import { useHistory, useLocation } from 'react-router';
 import "./Login.css"
+import { UserContext } from '../../App';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 firebase.initializeApp(firebaseConfig);
 if (!firebase.app.length) {
@@ -23,6 +26,7 @@ const Login = () => {
     const { from } = location.state || { from: { pathname: "/" } };
 
     const handleGoogleSignIn = () => {
+       
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).then(function (result) {
             const { displayName, email } = result.user;
@@ -37,9 +41,10 @@ const Login = () => {
     }
     return (
         <div>
-            <div className="login-container" style={{ textAlign: "center" }}>
-                <h3 className="login-text">Please Log in Here</h3>
-                <button className="google-signin" onClick={handleGoogleSignIn}> Sign in with Google</button>
+            <div className="login-container mt-5" style={{ textAlign: "center" }}>
+                <h2 className="mt-5"><FontAwesomeIcon icon={faCamera}>Ellegance</FontAwesomeIcon></h2>
+                <h4>Please Log in Here</h4>
+                <button className="google-signin mt-5" onClick={handleGoogleSignIn}> Sign in with Google</button>
             </div>
         </div>
     );

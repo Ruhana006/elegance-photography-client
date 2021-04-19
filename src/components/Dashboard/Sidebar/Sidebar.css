@@ -1,0 +1,10 @@
+.sidebar{
+    position: fixed;
+    background-color: rgb(233, 211, 12) ;
+    margin:0%;
+}
+ .link{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}

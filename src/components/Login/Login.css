@@ -1,0 +1,14 @@
+.login-container{
+    height:500px;
+    width: 100%;
+}
+.google-signin{
+  width:40%;
+    padding: 15px;
+    border: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(48, 47, 47);
+    border-radius: 50px;
+}
