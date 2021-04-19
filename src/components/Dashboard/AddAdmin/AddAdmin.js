@@ -46,16 +46,3 @@ const AddAdmin = () => {
 };
 
 export default AddAdmin;
-
-{/* <form onSubmit={handleMakeAdmin(handleBlur)}>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Admin Name</label>
-                        <input onBlur={handleBlur} type="text" class="form-control"  name="name" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email Address</label>
-                        <input onBlur={handleBlur} type="email" class="form-control" name="email" />
-                    </div>
-
-                    <button type="submit" class="btn btn-outline-dark">Make Admin</button>
-                </form> */}
