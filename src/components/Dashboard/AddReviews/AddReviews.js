@@ -18,7 +18,7 @@ const AddReviews = () => {
 
         };
 
-        const url = `http://localhost:5000/addreview`;
+        const url = `https://boiling-plateau-48449.herokuapp.com/addreview`;
         console.log("review data",reviewData);
         fetch(url , {
             method : 'POST',

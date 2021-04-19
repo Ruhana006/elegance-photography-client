@@ -6,7 +6,7 @@ const Dashboard = () => {
     const [admins,setAdmins] = useState([])
 
     useEffect(()=>{   
-        fetch('http://localhost:5000/admins')
+        fetch('https://boiling-plateau-48449.herokuapp.com/admins')
         .then(res=>res.json())
         .then(data => setAdmins(data))
      },[])

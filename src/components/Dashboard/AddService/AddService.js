@@ -19,7 +19,7 @@ const AddService = () => {
             email : loggedInUser.email
         };
 
-        const url = `http://localhost:5000/addservice`;
+        const url = `https://boiling-plateau-48449.herokuapp.com/addservice`;
         console.log("service data",serviceData);
         fetch(url , {
             method : 'POST',

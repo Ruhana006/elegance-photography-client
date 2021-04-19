@@ -11,7 +11,7 @@ const AddAdmin = () => {
             name : data.name,
             email : data.email
         };
-        const url = `http://localhost:5000/addadmin`;
+        const url = `https://boiling-plateau-48449.herokuapp.com/addadmin`;
         console.log("review data",adminData);
         fetch(url , {
             method : 'POST',

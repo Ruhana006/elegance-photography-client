@@ -14,7 +14,7 @@ const BookOrder = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/` + _id)
+        fetch(`https://boiling-plateau-48449.herokuapp.com/services/` + _id)
             .then(res => res.json())
             .then(data => {
                 setSelectedService(data[0])
@@ -32,7 +32,7 @@ const BookOrder = () => {
 
         const newBooking = {...loggedInUser , serviceName,servicePrice}
 
-        fetch('http://localhost:5000/addbooking',{
+        fetch('https://boiling-plateau-48449.herokuapp.com/addbooking',{
             method : 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newBooking)
